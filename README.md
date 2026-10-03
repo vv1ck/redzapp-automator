@@ -1,89 +1,68 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/vv1ck/redzapp-automator/main/cats.jpg" alt="RedzApp Automator Logo" width="250" style="border-radius: 15px;">
-  <br><br>
+  <img src="https://raw.githubusercontent.com/vv1ck/redzapp-automator/main/cat.jpg" alt="RedzApp Automator" width="150" style="border-radius:50%;"/>
   
   <h1>🚀 RedzApp Automator</h1>
-  <p><b>Advanced Account Provisioning & Engagement Automation Tool for Redz</b></p>
+  <p><b>أداة أتمتة متقدمة وتفاعل ذكي لمنصة Redz</b></p>
+
+  <!-- Badges Section -->
+  <img src="https://img.shields.io/badge/Language-Python_3.8+-blue.svg?style=for-the-badge&logo=python" alt="Python Version" />
+  <img src="https://img.shields.io/badge/Status-Active-success.svg?style=for-the-badge" alt="Status" />
+  <img src="https://img.shields.io/badge/Platform-Windows_|_Linux_|_macOS-lightgrey.svg?style=for-the-badge" alt="Platform" />
   
-  <a href="https://github.com/vv1ck">
-    <img src="https://img.shields.io/badge/Author-vv1ck-blue.svg?style=flat-square" alt="Author">
-  </a>
-  <a href="https://t.me/vv0ck">
-    <img src="https://img.shields.io/badge/Telegram-Channel-2CA5E0.svg?style=flat-square&logo=telegram" alt="Telegram">
-  </a>
-  <img src="https://img.shields.io/badge/Python-3.8+-green.svg?style=flat-square&logo=python" alt="Python">
+  <br><br>
 </div>
 
-## 📌 Overview
+---
 
-**RedzApp Automator** is a high-performance, multi-threaded Python utility designed to automate account creation and manage engagement metrics on the Redz platform. 
+<div align="center">
+  <h3>⚡ ماذا تفعل هذه الأداة؟</h3>
+  <p>أداة <b>RedzApp Automator</b> هي نظام متكامل مبني بلغة بايثون يهدف إلى أتمتة التفاعل على منصة Redz. تقوم الأداة بتوليد حسابات جديدة تلقائياً وتوجيهها للتفاعل مع منشوراتك وحسابك الشخصي عبر شبكة من البروكسيات لضمان أمان وفعالية العمليات.</p>
+</div>
 
-The script dynamically provisions new accounts (verifying them via temporary emails), bypasses basic restrictions, and coordinates these accounts to artificially boost engagement on targeted profiles and posts. This includes driving up follower counts, post views, likes, comments, shares, and bookmarks.
+<br>
 
-## ✨ Core Features
-
-- **Automated Account Creation:** Seamlessly generates new Redz accounts with automated email verification and session handling.
-- **Dynamic Profile Customization:** Automatically assigns authentic-looking Arabic names and randomly selects elegant Islamic supplications (Adhkar/Duas) for the account bio to ensure profiles look legitimate.
-- **Customizable Username Lengths:** Generate highly sought-after usernames (3-letter, 4-letter, or random 5-6 letter combinations).
-- **Engagement Manipulation:** Directs the generated fleet of accounts to interact with a specific target:
-  - Auto-Follow the target user.
-  - Auto-Like, View, Share, Bookmark, and Comment on targeted posts or series.
-- **Proxy Rotation Support:** Built-in proxy parsing and rotation to distribute requests and avoid IP-based rate limiting or blocks.
-- **Multi-threading Architecture:** Utilizes Python's `threading` module to run dozens of creation and engagement instances concurrently for rapid execution.
-- **Interactive CLI:** An easy-to-use command-line interface to configure targeting and settings on the fly.
-
-## ⚙️ Prerequisites
-
-Ensure you have Python 3.8 or higher installed. You will also need to install the required dependencies:
-
-```bash
-pip install requests user_agent httpx
-```
-
-## 🚀 Installation & Setup
-
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/vv1ck/redzapp-automator.git
-   cd redzapp-automator
-   ```
-
-2. **Configure Proxies:**
-   The tool requires proxies to function effectively without getting flagged. 
-   Create a file named `proxy.txt` in the root directory and add your proxies (one per line). The tool supports various proxy formats (e.g., `IP:Port`, `User:Pass@IP:Port`, etc.).
-   ```bash
-   nano proxy.txt
-   ```
-
-## 🛠️ Usage & Configuration
-
-Upon running the tool for the first time, you **must** configure your target parameters via the built-in settings menu.
-
-1. **Launch the script:**
-   ```bash
-   python redzapp.py
-   ```
-
-2. **Access Settings:** 
-   From the main menu, type `2` and hit Enter to access the configuration module. 
-   Here you need to define:
-   - **Activate System:** Ensure this is set to `on` to enable the engagement payload.
-   - **Target Username:** Enter your Redz username (the account that will receive the followers).
-   - **Post URL:** Paste the exact URL of the Redz post or series you want to boost with likes, views, and comments.
-   - **Username Length:** Choose the format for the generated bot accounts (Option `1` for 3 letters, `2` for 4 letters, or `3` for random 5-6 letters).
-
-3. **Start the Engine:**
-   Once configured, return to the main menu and select `1`. The script will initiate the multi-threaded sequence, create accounts, and automatically execute the engagement tasks against your configured targets.
-
-## 📁 Output
-
-The tool will automatically create a `redzapp_accounts` directory. It securely logs all successfully created accounts, session tokens, and device IDs into organized `.txt` files (e.g., `new_random_accounts.txt`), alongside operational logs and a `Settings.json` file for state persistence.
-
-## 📞 Contact & Support
-
-For updates, custom scripts, or support, join the Telegram channel:
-
-**👉 [Telegram Channel: @vv0ck](https://t.me/vv0ck)**
+## ✨ المميزات الرئيسية (Features)
+<table>
+  <tr>
+    <td align="center"><b>🤖 إنشاء حسابات تلقائي</b><br>توليد حسابات بأسماء يوزرات قابلة للتخصيص (3-6 حروف).</td>
+    <td align="center"><b>📈 تعزيز التفاعل (Engagement)</b><br>زيادة المشاهدات، الإعجابات، التعليقات، الحفظ، والمشاركة.</td>
+  </tr>
+  <tr>
+    <td align="center"><b>🛡️ دعم البروكسي (Proxy)</b><br>دعم كامل للبروكسيات لتخطي الحظر وضمان استمرارية العمل.</td>
+    <td align="center"><b>✨ لمسة جمالية (Bio)</b><br>إضافة أدعية وأذكار عشوائية بشكل تلقائي في بايو كل حساب جديد.</td>
+  </tr>
+</table>
 
 ---
-*Disclaimer: This tool is provided for educational and research purposes only. The author is not responsible for any misuse, account bans, or violations of platform Terms of Service.*
+
+## 🛠️ التثبيت والتشغيل (Installation & Usage)
+
+<details>
+<summary><b>اضغط هنا لعرض خطوات التشغيل بالتفصيل ⬇️</b></summary>
+<br>
+
+**1. المتطلبات الأساسية:**
+- بايثون 3.8 أو أحدث.
+- ملف `proxy.txt` يحتوي على قائمة البروكسيات الخاصة بك.
+
+**2. إعداد الأداة (للمرة الأولى):**
+عند تشغيل الأداة لأول مرة، قم باختيار **رقم 2** للدخول إلى الإعدادات:
+*   **Activate:** تفعيل أو إيقاف عملية إرسال المتابعين.
+*   **Username Length:** تحديد طول اليوزر للحسابات الوهمية (مثال: 3 حروف، 4 حروف، أو عشوائي 5-6 حروف).
+*   **Target Username:** إضافة اليوزر الخاص بك والذي تريد إرسال المتابعين إليه.
+*   **Target Post URL:** إضافة رابط المنشور المستهدف لزيادة التفاعل عليه.
+
+**3. بدء العمل:**
+بعد حفظ الإعدادات، ارجع للقائمة الرئيسية واختر **رقم 1** لبدء عملية الأتمتة وإنشاء الحسابات وتوجيهها للتفاعل.
+
+</details>
+
+<br>
+
+<div align="center">
+  <h3>📬 التواصل (Contact)</h3>
+  <p>للمزيد من التحديثات والأدوات، انضم إلى القناة الرسمية على تيليجرام:</p>
+  <a href="https://t.me/vv0ck">
+    <img src="https://img.shields.io/badge/Telegram-Join_Channel-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram Channel">
+  </a>
+</div>
