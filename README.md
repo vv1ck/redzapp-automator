@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/vv1ck/redzapp-automator/main/cat.jpg" alt="RedzApp Automator Logo" width="250" style="border-radius: 15px;">
+  <img src="https://raw.githubusercontent.com/vv1ck/redzapp-automator/main/cats.jpg" alt="RedzApp Automator Logo" width="250" style="border-radius: 15px;">
   <br><br>
   
   <h1>🚀 RedzApp Automator</h1>
